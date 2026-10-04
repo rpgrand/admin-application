@@ -2292,34 +2292,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
  
 
-    form.addEventListener("submit", function (e) {
+   form.addEventListener("submit", function (e) {
 
-        e.preventDefault();
+    e.preventDefault();
 
-        const usernameInput = document.getElementById("username");
-        const submitBtn = form.querySelector("button[type='submit']");
-        
-        const passwordInput = document.getElementById("password");
-        const password = passwordInput ? passwordInput.value : "";
+    const usernameInput = document.getElementById("username");
+    const submitBtn = form.querySelector("button[type='submit']");
+         
+    const passwordInput = document.getElementById("password");
+    const password = passwordInput ? passwordInput.value : "";
 
-        if (!usernameInput) {
-            console.log("Username input element not found.");
-            return;
-        }
+    if (!usernameInput) {
+        console.log("Username input element not found.");
+        return;
+    }
 
-        const username = usernameInput.value.trim();
+    const username = usernameInput.value.trim();
 
-        if (!username) {
-            showNotice("Please enter your Gmail address.", "error");
-            usernameInput.focus();
-            return;
-        }
+    if (!username) {
+        showNotice("Please enter your email address.", "error");
+        usernameInput.focus();
+        return;
+    }
 
-        if (!username.toLowerCase().endsWith("@gmail.com")) {
-            showNotice("Please enter a valid Gmail address.", "error");
-            usernameInput.focus();
-            return;
-        }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(username)) {
+        showNotice("Please enter a valid email address.", "error");
+        usernameInput.focus();
+        return;
+    }
+
 
         let originalBtnText = "";
         if (submitBtn) {
