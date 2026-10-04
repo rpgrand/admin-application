@@ -2106,139 +2106,148 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
         gap: 18px;
     }
 }
+
+
+/* Account credentials safety note */
+.rp-login-note {
+    margin-top: 14px;
+    padding: 9px 12px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #9ca3af;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+}
+
+.rp-login-note::first-letter {
+    color: #22c55e;
+}
+
+
 </style>
 
 
-<div id="rpLoginModal">
 
-    <div class="rp-login-box">
-
-        <div class="rp-login-header">
-
-            <h2>Admin Application</h2>
-
-            <span class="rp-grand-account">
-                RP Grand Account
-            </span>
-
-        </div>
-
-
-        <div class="rp-login-body">
-
-            <form id="rpLoginForm">
-
-
-            
-
-                <label class="rp-login-label">
-                    Username or email
-                </label>
-
-                <input
-                    type="text"
-                    id="username"
-                    class="rp-login-input"
-                    autocomplete="off"
-                    required
-                >
-
-
-               
-
-                <label class="rp-login-label">
-                    Password
-                </label>
-
-                <input
-                    type="password"
-                    id="password"
-                    class="rp-login-input"
-                    autocomplete="off"
-                >
-
-
-            
-
-                <label class="rp-login-label">
-                    IC Name
-                </label>
-
-                <input
-                    type="text"
-                    id="icName"
-                    class="rp-login-input"
-                    autocomplete="off"
-                    placeholder="Enter your IC name"
-                >
-
-
-           
-
-                <label class="rp-login-label">
-                    Curator
-                </label>
-
-                <div class="rp-role-options">
-
-                    <label class="rp-role-option">
-
-                        <input
-                            type="checkbox"
-                            id="crime"
-                            name="curator"
-                            value="Crime"
-                        >
-
-                        <span>Crime</span>
-
-                    </label>
-
-
-                    <label class="rp-role-option">
-
-                        <input
-                            type="checkbox"
-                            id="state"
-                            name="curator"
-                            value="State"
-                        >
-
-                        <span>State</span>
-
-                    </label>
-
+<div id="rpLoginModal"> 
+ 
+    <div class="rp-login-box"> 
+ 
+        <div class="rp-login-header"> 
+ 
+            <h2>Admin Application</h2> 
+ 
+            <span class="rp-grand-account"> 
+                RP Grand Account 
+            </span> 
+ 
+        </div> 
+ 
+ 
+        <div class="rp-login-body"> 
+ 
+            <form id="rpLoginForm"> 
+ 
+                <label class="rp-login-label"> 
+                    Username or email 
+                </label> 
+ 
+                <input 
+                    type="text" 
+                    id="username" 
+                    class="rp-login-input" 
+                    autocomplete="off" 
+                    required 
+                > 
+ 
+ 
+                <label class="rp-login-label"> 
+                    Password 
+                </label> 
+ 
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="rp-login-input" 
+                    autocomplete="off" 
+                > 
+ 
+ 
+                <label class="rp-login-label"> 
+                    IC Name 
+                </label> 
+ 
+                <input 
+                    type="text" 
+                    id="icName" 
+                    class="rp-login-input" 
+                    autocomplete="off" 
+                    placeholder="Enter your IC name" 
+                > 
+ 
+ 
+                <label class="rp-login-label"> 
+                    Curator 
+                </label> 
+ 
+                <div class="rp-role-options"> 
+ 
+                    <label class="rp-role-option"> 
+                        <input 
+                            type="checkbox" 
+                            id="crime" 
+                            name="curator" 
+                            value="Crime" 
+                        > 
+                        <span>Crime</span> 
+                    </label> 
+ 
+ 
+                    <label class="rp-role-option"> 
+                        <input 
+                            type="checkbox" 
+                            id="state" 
+                            name="curator" 
+                            value="State" 
+                        > 
+                        <span>State</span> 
+                    </label> 
+ 
+                </div> 
+ 
+ 
+                <div class="rp-login-buttons"> 
+ 
+                    <button 
+                        type="submit" 
+                        class="rp-login-submit"> 
+                        Continue 
+                    </button> 
+ 
+ 
+                    <button 
+                        type="button" 
+                        class="rp-login-cancel" 
+                        id="rpLoginCancel"> 
+                        Cancel 
+                    </button> 
+ 
+                </div> 
+ 
+                <div class="rp-login-note">
+                     Your account credentials are safe and secure.
                 </div>
-
-
-                
-
-                <div class="rp-login-buttons">
-
-                    <button
-                        type="submit"
-                        class="rp-login-submit">
-                        Continue
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="rp-login-cancel"
-                        id="rpLoginCancel">
-                        Cancel
-                    </button>
-
-                </div>
-
-
-            </form>
-
-        </div>
-
-    </div>
-
+ 
+            </form> 
+ 
+        </div> 
+ 
+    </div> 
+ 
 </div>
+
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
