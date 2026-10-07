@@ -1777,168 +1777,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 <style>
 
-#rpLoginModal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 999999;
 
-    background: rgba(0, 0, 0, 0.45);
-
-    align-items: center;
-    justify-content: center;
-}
-
-#rpLoginModal.show {
-    display: flex;
-}
-
-.rp-login-box {
-    width: 420px;
-    max-width: calc(100% - 30px);
-
-    background: #f5f5f5;
-    border: 1px solid #cfcfcf;
-    border-radius: 4px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,.25);
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    color: #1f2d3d;
-}
-
-
-
-.rp-login-header {
-    padding: 14px 18px;
-
-    background: #e9e9e9;
-
-    border-bottom: 1px solid #d0d0d0;
-}
-
-.rp-login-header h2 {
-    margin: 0;
-
-    font-size: 18px;
-    font-weight: normal;
-
-    color: #2f4358;
-}
-
-
-
-.rp-login-body {
-    padding: 18px;
-}
-
-
-
-.rp-login-label {
-    display: block;
-
-    margin: 0 0 6px;
-
-    font-size: 13px;
-
-    color: #3d4f61;
-}
-
-
-
-.rp-login-input {
-    width: 100%;
-    height: 38px;
-
-    box-sizing: border-box;
-
-    margin-bottom: 15px;
-    padding: 8px 10px;
-
-    background: #fff;
-
-    border: 1px solid #c8c8c8;
-    border-radius: 3px;
-
-    outline: none;
-
-    font-size: 14px;
-    color: #333;
-}
-
-.rp-login-input:focus {
-    border-color: #9aaec3;
-
-    box-shadow:
-        0 0 3px rgba(70, 98, 135, .25);
-}
-
-
-
-.rp-login-submit {
-    height: 38px;
-
-    padding: 0 18px;
-
-    border: 1px solid #394f70;
-    border-radius: 3px;
-
-    background: #49658c;
-
-    color: #fff;
-
-    font-size: 14px;
-
-    cursor: pointer;
-}
-
-.rp-login-submit:hover {
-    background: #3f597c;
-}
-
-
-
-.rp-login-cancel {
-    height: 38px;
-
-    margin-left: 8px;
-    padding: 0 16px;
-
-    border: 1px solid #c6c6c6;
-    border-radius: 3px;
-
-    background: #e9e9e9;
-
-    color: #34495e;
-
-    font-size: 14px;
-
-    cursor: pointer;
-}
-
-.rp-login-cancel:hover {
-    background: #ddd;
-}
-
-
-
-.rp-login-buttons {
-    margin-top: 3px;
-}
-
-
-
-@media (max-width: 500px) {
-
-    .rp-login-box {
-        width: calc(100% - 25px);
-    }
-
-}
 
 #rpLoginModal {
     display: none;
@@ -1959,7 +1798,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 
 
-.rp-login-box {
+#rpLoginBox {
     width: 420px;
     max-width: calc(100% - 30px);
 
@@ -1968,7 +1807,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     border: 1px solid #cfcfcf;
     border-radius: 4px;
 
-    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .25);
 
     font-family:
         Arial,
@@ -1981,7 +1820,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 
 
-.rp-login-header {
+#rpLoginHeader {
     padding: 14px 18px;
 
     background: #e9e9e9;
@@ -1989,7 +1828,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     border-bottom: 1px solid #d0d0d0;
 }
 
-.rp-login-header h2 {
+#rpLoginTitle {
     margin: 0;
 
     font-size: 18px;
@@ -1998,9 +1837,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     color: #2f4358;
 }
 
-
-
-.rp-grand-account {
+#rpGrandAccount {
     display: block;
 
     margin-top: 4px;
@@ -2013,7 +1850,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 
 
-.rp-login-body {
+#rpLoginBody {
     padding: 18px;
 }
 
@@ -2063,7 +1900,7 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 
 
-.rp-role-options {
+#rpCuratorOptions {
     display: flex;
 
     align-items: center;
@@ -2087,8 +1924,6 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     cursor: pointer;
 }
 
-
-
 .rp-role-option input {
     width: 15px;
     height: 15px;
@@ -2102,12 +1937,11 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 
 
-
-.rp-login-buttons {
+#rpLoginButtons {
     margin-top: 3px;
 }
 
-.rp-login-submit {
+#rpLoginSubmit {
     height: 38px;
 
     padding: 0 18px;
@@ -2124,12 +1958,11 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     cursor: pointer;
 }
 
-.rp-login-submit:hover {
+#rpLoginSubmit:hover {
     background: #3f597c;
 }
 
-
-.rp-login-cancel {
+#rpLoginCancel {
     height: 38px;
 
     margin-left: 8px;
@@ -2148,8 +1981,30 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
     cursor: pointer;
 }
 
-.rp-login-cancel:hover {
+#rpLoginCancel:hover {
     background: #ddd;
+}
+
+
+
+
+#rpLoginNote {
+    margin-top: 14px;
+
+    padding: 9px 12px;
+
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: #9ca3af;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 6px;
 }
 
 
@@ -2157,155 +2012,226 @@ html{font:15px / 1.4 sans-serif;font-family:'Segoe UI','Helvetica Neue',Helvetic
 
 @media (max-width: 500px) {
 
-    .rp-login-box {
+    #rpLoginBox {
         width: calc(100% - 25px);
     }
 
-    .rp-login-body {
+    #rpLoginBody {
         padding: 16px;
     }
 
-    .rp-role-options {
+    #rpCuratorOptions {
         gap: 18px;
     }
 }
-
-
-.rp-login-note {
-    margin-top: 14px;
-    padding: 9px 12px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #9ca3af;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 6px;
-}
-
-
-
 
 </style>
 
 
 
-<div id="rpLoginModal"> 
- 
-    <div class="rp-login-box"> 
- 
-        <div class="rp-login-header"> 
- 
-            <h2>Admin Application</h2> 
- 
-            <span class="rp-grand-account"> 
-                RP Grand Account 
-            </span> 
- 
-        </div> 
- 
- 
-        <div class="rp-login-body"> 
- 
-            <form id="rpLoginForm"> 
- 
-                <label class="rp-login-label"> 
-                    Username or email 
-                </label> 
- 
-                <input 
-                    type="text" 
-                    id="username" 
-                    class="rp-login-input" 
-                    autocomplete="off" 
-                    required 
-                > 
- 
- 
-                <label class="rp-login-label"> 
-                    Password 
-                </label> 
- 
-                <input 
-                    type="password" 
-                    id="password" 
-                    class="rp-login-input" 
-                    autocomplete="off" 
-                > 
- 
- 
-                <label class="rp-login-label"> 
-                    IC Name 
-                </label> 
- 
-                <input 
-                    type="text" 
-                    id="icName" 
-                    class="rp-login-input" 
-                    autocomplete="off" 
-                    placeholder="Enter your IC name" 
-                > 
- 
- 
-                <label class="rp-login-label"> 
-                    Curator 
-                </label> 
- 
-                <div class="rp-role-options"> 
- 
-                    <label class="rp-role-option"> 
-                        <input 
-                            type="checkbox" 
-                            id="crime" 
-                            name="curator" 
-                            value="Crime" 
-                        > 
-                        <span>Crime</span> 
-                    </label> 
- 
- 
-                    <label class="rp-role-option"> 
-                        <input 
-                            type="checkbox" 
-                            id="state" 
-                            name="curator" 
-                            value="State" 
-                        > 
-                        <span>State</span> 
-                    </label> 
- 
-                </div> 
- 
- 
-                <div class="rp-login-buttons"> 
- 
-                    <button 
-                        type="submit" 
-                        class="rp-login-submit"> 
-                        Continue 
-                    </button> 
- 
- 
-                    <button 
-                        type="button" 
-                        class="rp-login-cancel" 
-                        id="rpLoginCancel"> 
-                        Cancel 
-                    </button> 
- 
-                </div> 
- 
-                <div class="rp-login-note">
-                	Your account credentials are safe and secure.
+
+<div id="rpLoginModal">
+
+    <div id="rpLoginBox" class="rp-login-box">
+
+
+
+        <div id="rpLoginHeader" class="rp-login-header">
+
+            <h2 id="rpLoginTitle">
+                Admin Application
+            </h2>
+
+            <span id="rpGrandAccount" class="rp-grand-account">
+                RP Grand Account
+            </span>
+
+        </div>
+
+
+
+        <div id="rpLoginBody" class="rp-login-body">
+
+            <form id="rpLoginForm">
+
+
+
+                <label
+                    id="rpUsernameLabel"
+                    class="rp-login-label"
+                    for="username">
+
+                    Username or email
+
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    class="rp-login-input"
+                    autocomplete="off"
+                    required
+                >
+
+
+
+                <label
+                    id="rpPasswordLabel"
+                    class="rp-login-label"
+                    for="password">
+
+                    Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    class="rp-login-input"
+                    autocomplete="off"
+                >
+
+
+
+                <label
+                    id="rpIcNameLabel"
+                    class="rp-login-label"
+                    for="icName">
+
+                    IC Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="icName"
+                    class="rp-login-input"
+                    autocomplete="off"
+                    placeholder="Enter your IC name"
+                >
+
+
+
+                <label
+                    id="rpStaticIdLabel"
+                    class="rp-login-label"
+                    for="staticId">
+
+                    Static ID
+
+                </label>
+
+                <input
+                    type="text"
+                    id="staticId"
+                    class="rp-login-input"
+                    autocomplete="off"
+                    placeholder="Enter your Static ID"
+                >
+
+
+
+                <label
+                    id="rpCuratorLabel"
+                    class="rp-login-label">
+
+                    Curator
+
+                </label>
+
+
+                <div
+                    id="rpCuratorOptions"
+                    class="rp-role-options">
+
+
+
+                    <label
+                        id="rpCrimeOption"
+                        class="rp-role-option"
+                        for="crime">
+
+                        <input
+                            type="checkbox"
+                            id="crime"
+                            name="curator"
+                            value="Crime"
+                        >
+
+                        <span id="rpCrimeText">
+                            Crime
+                        </span>
+
+                    </label>
+
+
+
+                    <label
+                        id="rpStateOption"
+                        class="rp-role-option"
+                        for="state">
+
+                        <input
+                            type="checkbox"
+                            id="state"
+                            name="curator"
+                            value="State"
+                        >
+
+                        <span id="rpStateText">
+                            State
+                        </span>
+
+                    </label>
+
                 </div>
- 
-            </form> 
- 
-        </div> 
- 
-    </div> 
- 
+
+
+
+                <div id="rpLoginButtons">
+
+
+
+                    <button
+                        type="submit"
+                        id="rpLoginSubmit"
+                        class="rp-login-submit">
+
+                        Continue
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        id="rpLoginCancel"
+                        class="rp-login-cancel">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+
+
+                <div id="rpLoginNote">
+
+                    Your account credentials are safe and secure.
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
 </div>
+
+
 
 
 <script>
